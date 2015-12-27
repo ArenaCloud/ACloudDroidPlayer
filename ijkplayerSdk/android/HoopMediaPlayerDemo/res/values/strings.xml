@@ -2,4 +2,5 @@
 <string name="app_name">HoopMediaPlayerDemo</string>
 <string name="RtmpAddress1Str">input the rtmp address</string>
 <string name="StartPlay1Str">Play</string>
+  <string name="buffering">buffering</string>
 </resources>
