@@ -41,14 +41,13 @@ public class BroadcastTestActivity extends ActionBarActivity implements Broadcas
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         Bundle extras = new Bundle();
-        extras.putInt("WIDTH", 1280);
-        extras.putInt("HEIGHT", 720);
         extras.putString("ORIENTATION", "portrait");
         extras.putString("CAMERA", "back");
 
         setContentView(R.layout.activity_arena_cloud_broadcast_test);
         mFrameLayout = (AspectFrameLayout) findViewById(R.id.cameraPreview_afl);
         mBroadcastView = (BroadcastView)findViewById(R.id.cameraPreview_surfaceView);
+        //mBroadcastView.initBroadcast(extras, publickkey ,this);
         mBroadcastView.initBroadcast(extras, this);
 
         if (mBroadcastView.getAspectRatio()!=0)
